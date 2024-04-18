@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #activete {
+                font-family: 'Comfortaa';
+                font-size: 20px;
+                color: #ffffff !important;
+                padding: 0px 0px;
+                border-radius: 0px;
+                border: 3px inset #f3c846;
+                background: #9e220a;
+                background: linear-gradient(to bottom, #ff6200, #ddbe10);
+            }
+            #activete:hover {
+                color: #ffffff !important;
+                background: #f66d52;
+                background: linear-gradient(to bottom, #ff6200, #bf8e25);
+            }
+            #menu {
+                background-color: rgb(57, 52, 52);
+                position: absolute;
+                right: 80%;
+                height: 100%;
+                width: 20%;
+                display: none;
+                
+            }
+            .close {
+                position: absolute;
+                top: 5px;
+                right: 20px;
+            }
+            body{
+                background-color: rgb(141, 220, 208);
+                background-image: url(https://cdn.akamai.steamstatic.com/steam/apps/284160/ss_1b129249ad662d242a81a34ee2fdcdcbe064eb32.1920x1080.jpg?t=1709017559);
+                z-index: 2;
+            }
+            .lenta{
+                background-color: azure;
+                width: 650px;
+                left: 570px;
+                height: 500vh;
+                z-index: 1;
+                position: absolute;
+            }
+            .BeamNG{
+                color: #ff6200;
+                left: 650px;
+                position: absolute;
+                z-index: 3;
+                font-size: 20px;
+            }
+            .drive{
+                color: black;
+                z-index: 3;
+                position: absolute;
+                left: 820px;
+                font-size: 20px;
+            }
+            .button{
+                font-family: 'Comfortaa';
+                font-size: 20px;
+                color: #ffffff !important;
+                padding: 3px 9px;
+                border-radius: 0px;
+                border: 2px outset #f3c846;
+                background: #9e220a;
+                background: linear-gradient(to bottom, #ff6200, #ddbe10);
+            }
+            .button:hover{
+                color: #ffffff !important;
+                background: #f66d52;
+                background: linear-gradient(to bottom, #ff6200, #bf8e25);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="menu">
+            <div><button class="button"><a href="general.html">Главная</a></button></div><br>
+            <div><button class="button"><a href="mods.html">Моды</a></button></div><br>
+            <div><button class="button"><a href="link.html">Ссылка на BeamNG.drive</a></button></div><br>
+            <div><button class="button"><a href="about_us.html">про нас</a></button></div><br>
+            <div class="close"><button onclick="document.getElementById('menu').style.display='none'">закрыть</button></div>
+        </div>
+        <div id="Activete" onclick="document.getElementById('menu').style.display='block'"><button id="activete">Меню</button></div>
+        <div class="lenta"></div>
+        <div class="BeamNG"><h1>BeamNG</h1></div>
+        <div class="drive"><h1>drive</h1></div>
+    </body>
+</html>
